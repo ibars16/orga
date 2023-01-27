@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fontFamily="@font/happymonkey_regular"
+    tools:ignore="MissingDefaultResource"
+    android:textSize="@dimen/midaNormal">
+
+
+    <TextView
+        android:id="@+id/hola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:tag="figura1"
+        android:text="Arrastra els elements a la casella"
+        android:textAlignment="center"
+        android:textSize="@dimen/mida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seleccio1joc6" />
+
+    <TextView
+        android:id="@+id/seleccio1joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/happymonkey_regular"
+        android:tag="Orgue portatiu"
+        android:text="Orgue portatiu"
+        android:textSize="@dimen/mida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcioJoc6" />
+
+    <TextView
+        android:id="@+id/seleccio2joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/happymonkey_regular"
+        android:tag="Orgue positiu"
+        android:text="Orgue positiu"
+        android:textSize="@dimen/mida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seleccio1joc6" />
+
+    <TextView
+        android:id="@+id/seleccio3joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/happymonkey_regular"
+        android:tag="Orgue principal"
+        android:text="Orgue principal"
+        android:textSize="@dimen/mida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcioJoc6" />
+
+    <TextView
+        android:id="@+id/seleccio4joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/happymonkey_regular"
+        android:tag="Gran orgue"
+        android:text="Gran orgue"
+        android:textSize="@dimen/mida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seleccio3joc6" />
+
+    <TextView
+        android:id="@+id/descripcioJoc6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="@string/joc6"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="@dimen/midaNormal"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/border_color"
+        android:fontFamily="@font/happymonkey_regular"
+        android:paddingHorizontal="30dp"
+        />
+
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/opcio1joc6"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/my_border"
+        android:paddingVertical="2dp"
+        android:tag="figura1"
+        android:textSize="@dimen/midaNormal"
+        app:layout_constraintBottom_toTopOf="@+id/opcio2joc6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcio2joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/happymonkey_regular"
+        android:text=": Es pot posar a "
+        android:textSize="@dimen/mida"
+        app:layout_constraintBottom_toTopOf="@id/descripcio2_1joc6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcio2_1joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/opcio3joc6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="diferents llocs."
+        android:textSize="@dimen/mida"
+        android:fontFamily="@font/happymonkey_regular" />
+
+    <TextView
+        android:textAlignment="center"
+        android:paddingVertical="2dp"
+        android:id="@+id/opcio2joc6"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/opcio3joc6"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:textSize="@dimen/midaNormal"
+        android:background="@drawable/my_border"
+        android:tag="figura1"
+        />
+
+    <TextView
+        android:id="@+id/descripcio1joc6"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/happymonkey_regular"
+        android:text=": Té milers de tubs i "
+        android:textSize="@dimen/mida"
+        app:layout_constraintBottom_toTopOf="@id/descripcio1_1joc6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcio1_1joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/opcio2joc6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="necessita un espai gran per a posar-lo."
+        android:textSize="@dimen/mida"
+        android:fontFamily="@font/happymonkey_regular" />
+
+
+
+
+    <TextView
+        android:id="@+id/descripcio3joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/happymonkey_regular"
+        android:text=": Es porta a sobre "
+        android:textSize="@dimen/mida"
+        app:layout_constraintBottom_toTopOf="@id/descripcio3_1joc6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcio3_1joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/opcio4joc6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="mentre es toca."
+        android:textSize="@dimen/mida"
+        android:fontFamily="@font/happymonkey_regular" />
+
+
+    <TextView
+        android:textAlignment="center"
+        android:paddingVertical="2dp"
+        android:id="@+id/opcio3joc6"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/opcio4joc6"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:textSize="@dimen/midaNormal"
+        android:background="@drawable/my_border"
+        android:tag="figura1"
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:paddingVertical="2dp"
+        android:id="@+id/opcio4joc6"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/siguiente"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:textSize="@dimen/midaNormal"
+        android:background="@drawable/my_border"
+        android:tag="figura1"
+        />
+
+
+    <TextView
+        android:id="@+id/descripcio4joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/happymonkey_regular"
+        android:text=": Té només un teclat "
+        android:textAlignment="center"
+        android:textSize="@dimen/mida"
+        app:layout_constraintBottom_toTopOf="@id/descripcio4_1joc6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcio4_1joc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/siguiente"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="però ja té dimensions considerables."
+        android:textSize="@dimen/mida"
+        android:fontFamily="@font/happymonkey_regular" />
+
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/happymonkey_regular"
+        android:text="@string/siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

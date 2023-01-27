@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+  >
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/descripcioJoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/joc1"
+        android:textSize="@dimen/midaNormal"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/border_color"
+        android:fontFamily="@font/happymonkey_regular"
+        android:paddingHorizontal="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/imagen1Joc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/joc1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descripcioJoc" />
+
+    <Button
+        android:id="@+id/infoJoc1"
+        android:fontFamily="@font/happymonkey_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imagen1Joc1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Informació"
+        />
+
+    <com.example.orga.MyImageView
+        android:id="@+id/imagen2Joc1"
+        android:layout_width="267dp"
+        android:layout_height="274dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/drawing0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fallosJoc1" />
+
+    <TextView
+        android:id="@+id/fallosJoc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/fallos"
+        android:textAlignment="center"
+        android:textSize="@dimen/midaPetita"
+        android:fontFamily="@font/happymonkey_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen1Joc1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
